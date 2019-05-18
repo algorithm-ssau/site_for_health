@@ -116,7 +116,6 @@ margin-left: 18px;
 /*хазэ, как сделать, чтобы линия ехала сверху и снизу тип ---текст---- */
 /* .change_lesson a:after{
   background-color: #ff9100;
-
     display: block;
     content: "";
     height: 3px;
@@ -124,7 +123,6 @@ margin-left: 18px;
     -webkit-transition: width .3s ease-in-out;
     -moz--transition: width .3s ease-in-out;
     transition: width .3s ease-in-out;
-
 } */
 
 
@@ -205,9 +203,12 @@ margin-left: 18px;
 }
 
 
+.central{
+	padding-top: 12%;
+}
+
 .central__scroll{
 	perspective: 1200px;
- 	padding-top:15%;
  	font-size:0;
  	margin-bottom: 3rem;
  	overflow: hidden;
@@ -222,6 +223,8 @@ margin-left: 18px;
 
  .scroll__img{
   	width: 40%;
+		height: 100%;
+		max-height: 425px;
 		max-width: 425px;
   	position: absolute;
 		left: 30%;
@@ -235,22 +238,30 @@ margin-left: 18px;
 .scroll .scroll__img:nth-child(4) { transform: rotateY(-135deg); }
 .scroll .scroll__img:nth-child(5) { transform: rotateY(-180deg); }
 .scroll .scroll__img:nth-child(6) { transform: rotateY(-225deg); }
-/* figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
-figure#spinner img:nth-child(8){ transform: rotateY(-315deg); } */
+.scroll .scroll__img:nth-child(7){ transform: rotateY(-270deg); }
+.scroll .scroll__img:nth-child(8){ transform: rotateY(-315deg); }
 
 .scroll__next {
   color: #fff;
-  margin: 5%;
+  margin: 10%;
   display: inline-block;
   text-decoration: none;
   font-size: 2rem;
   transition: 0.6s color;
   position: relative;
-  margin-top: -15rem;
+  margin-top: -10rem;
   border-bottom: none;
   line-height: 0; }
 
 .scroll__next:hover{
 		color: #888;
 		cursor: pointer;
-	}
+}
+.scroll__choose{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	color: white;
+}
