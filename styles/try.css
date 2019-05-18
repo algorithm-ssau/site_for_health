@@ -1,0 +1,158 @@
+
+body {
+	height: 100%;
+	background-image: url("/images/background.jpg");
+	background-repeat: repeat-y;
+	background-size: 100%;
+
+}
+
+a, a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+
+/*меню (хэдер)*/
+.top_menu	{
+  position: fixed;
+	top: 0;
+	margin-top: 24px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+/*лого*/
+.top_menu .logo	{
+margin-left: 18px;
+}
+
+/*сама менюшка*/
+.top_menu .navigation_bar {
+    display: flex;
+    margin-left: 50px;
+    height: 50px;
+}
+
+/*ссылки менюшки*/
+.nav {
+	font-size: 20px;
+	margin: 0 15px;
+	padding: 15px 0;
+
+}
+
+.nav a:after{
+  background-color: #ff9100;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+
+}
+
+
+.nav a:hover:after,
+.nav a:focus:after {
+    width: 100%;
+}
+/*блок поделиться в соцсетях */
+.top_menu .share_bar {
+	order: 999;
+	display: flex;
+	right: 0;
+	margin-left: auto;
+	margin-right: 86px;
+  height: 50px;
+  padding-top: 15px;
+}
+
+/*каждая ссылочка в делении*/
+.share {
+	margin-right:13px;
+
+}
+
+/*родительский блок для перехода на трени справа и слева*/
+.change_lesson{
+  display: flex;
+  font-family: sans-serif;
+  font-size: 1.5em;                         /* 3 */
+  cursor: pointer;
+}
+
+
+.change_lesson a::before{
+	display: inline-block;
+	position: fixed;
+	content: "";
+	height: 2px;
+	width: 0;
+	background-color: #ff9100;
+	transition: width .3s ease-in-out, up .3s ease-in-out, down .3s ease-in-out;
+}
+
+.change_lesson a::after{
+	 display: inline-block;
+	 position: fixed;
+   content: "";
+   height: 2px;
+   width: 0;
+   background-color: #ff9100;
+   transition: width .5s ease-in-out;
+
+}
+
+
+
+
+
+
+
+
+
+div#carousel {
+  perspective: 1200px;
+  background: #100000;
+  padding-top: 10%;
+  font-size:0;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+figure#spinner {
+  transform-style: preserve-3d;
+  height: 300px;
+  transform-origin: 50% 50% -500px;
+  transition: 1s;
+}
+figure#spinner img {
+  width: 40%; max-width: 425px;
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent;
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg);
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+/* figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); } */
+div#carousel ~ span {
+  color: #fff;
+  margin: 5%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 0.6s color;
+  position: relative;
+  margin-top: -6rem;
+  border-bottom: none;
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }

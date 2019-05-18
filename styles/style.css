@@ -1,0 +1,267 @@
+/*стили настеньки*/
+/* тело страницы */
+body {
+	height: 100%;
+	background-image: url("/images/background.jpg");
+	background-repeat: repeat-y;
+	background-size: 100%;
+
+}
+
+a, a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+
+/*меню (хэдер)*/
+.top_menu	{
+  position: fixed;
+	top: 0;
+	margin-top: 24px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+/*лого*/
+.top_menu .logo	{
+margin-left: 18px;
+}
+
+/*сама менюшка*/
+.top_menu .navigation_bar {
+    display: flex;
+    margin-left: 50px;
+    height: 50px;
+}
+
+/*ссылки менюшки*/
+.nav {
+	font-size: 20px;
+	margin: 0 15px;
+	padding: 15px 0;
+
+}
+
+.nav a:after{
+  background-color: #ff9100;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+
+}
+
+
+.nav a:hover:after,
+.nav a:focus:after {
+    width: 100%;
+}
+/*блок поделиться в соцсетях */
+.top_menu .share_bar {
+	order: 999;
+	display: flex;
+	right: 0;
+	margin-left: auto;
+	margin-right: 86px;
+  height: 50px;
+  padding-top: 15px;
+}
+
+/*каждая ссылочка в делении*/
+.share {
+	margin-right:13px;
+
+}
+
+/*родительский блок для перехода на трени справа и слева*/
+.change_lesson{
+  display: flex;
+  font-family: sans-serif;
+  font-size: 1.5em;                         /* 3 */
+  cursor: pointer;
+}
+
+
+.change_lesson a::before{
+	display: inline-block;
+	position: fixed;
+	content: "";
+	height: 2px;
+	width: 0;
+	background-color: #ff9100;
+	transition: width .3s ease-in-out, up .3s ease-in-out, down .3s ease-in-out;
+}
+
+.change_lesson a::after{
+	 display: inline-block;
+	 position: fixed;
+   content: "";
+   height: 2px;
+   width: 0;
+   background-color: #ff9100;
+   transition: width .5s ease-in-out;
+
+}
+
+
+/* .next{
+	position: absolute;
+} */
+
+/*хазэ, как сделать, чтобы линия ехала сверху и снизу тип ---текст---- */
+/* .change_lesson a:after{
+  background-color: #ff9100;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+} */
+
+
+.change_lesson a:hover:after,
+.change_lesson a:focus:after {
+    width: 100%;
+}
+
+ .change_lesson .next{
+   transform: translate(0, -50%) ;
+   position: absolute;           /* 2 */
+   top: 50%;
+   right: 10px;
+   /*поворотик*/
+   -webkit-transform: rotate(-90deg); /*Chrome, Safari*/
+   -moz-transform: rotate(-90deg); /*Firefox*/
+   -o-transform: rotate(-90deg); /*Opera*/
+   -ms-transform: rotate(-90deg); /*IE*/
+   transform: rotate(-90deg); /*браузеры без префексов*/
+}
+
+.central_block{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 50%;
+  position: flex;
+}
+
+.central_block {
+		width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.logo_second{
+		position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+        display: block;
+    }
+}
+
+.start_phrase{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	color: white;
+}
+
+.start_sport{
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	color: white;
+}
+
+.start_sport_ref{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 25px;
+	color: white;
+	border-style: double;
+	border-width: 10px;
+	padding: 7px;
+}
+
+
+.central{
+	padding-top: 12%;
+}
+
+.central__scroll{
+	perspective: 1200px;
+ 	font-size:0;
+ 	margin-bottom: 3rem;
+ 	overflow: hidden;
+}
+
+.scroll {
+  transform-style: preserve-3d;
+  height: 300px;
+  transform-origin: 50% 50% -500px;
+  transition: 1s;
+}
+
+ .scroll__img{
+  	width: 40%;
+		height: 100%;
+		max-height: 425px;
+		max-width: 425px;
+  	position: absolute;
+		left: 30%;
+  	transform-origin: 50% 50% -500px;
+  	outline:1px solid transparent;
+}
+
+.scroll__img:nth-child(1) { transform:rotateY(0deg);}
+.scroll .scroll__img:nth-child(2) { transform: rotateY(-45deg); }
+.scroll .scroll__img:nth-child(3) { transform: rotateY(-90deg); }
+.scroll .scroll__img:nth-child(4) { transform: rotateY(-135deg); }
+.scroll .scroll__img:nth-child(5) { transform: rotateY(-180deg); }
+.scroll .scroll__img:nth-child(6) { transform: rotateY(-225deg); }
+.scroll .scroll__img:nth-child(7){ transform: rotateY(-270deg); }
+.scroll .scroll__img:nth-child(8){ transform: rotateY(-315deg); }
+
+.scroll__next {
+  color: #fff;
+  margin: 10%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 0.6s color;
+  position: relative;
+  margin-top: -10rem;
+  border-bottom: none;
+  line-height: 0; }
+
+.scroll__next:hover{
+		color: #888;
+		cursor: pointer;
+}
+.scroll__choose{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	color: white;
+}
