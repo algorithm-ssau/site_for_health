@@ -51,6 +51,7 @@ margin-left: 18px;
     position: fixed;
     transition: display 10s;
 }
+/*менюшка в скрытом виде*/
 .icon_menu{
     margin-left: 156px;
     margin-top: 18px;
@@ -295,9 +296,14 @@ margin-left: 18px;
     min-height: 100%;
     margin: 0px 20%;
 }
-/*блок для фото на 3 странице*/
+/*блок для правого фото на 3 странице*/
 .right_image{
     float: right;
+}
+/*блок для левого фото на 3 странице*/
+.left_image{
+    float: left;
+    margin-right: 40px;
 }
 .start_phrase{
 	position: absolute;
