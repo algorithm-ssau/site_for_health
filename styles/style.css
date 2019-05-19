@@ -1,0 +1,410 @@
+/*стили настеньки*/
+/* тело страницы */
+
+/*то, что ниже над Кате шоб все работало*/
+body, div, p, img, video, h1, h2, a {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+p{font-size: 20px;}
+h1{font-size: 32px;}
+h2{font-size: 28px;}
+li{font-size: 18px;}
+a {
+    text-decoration: none;
+}
+body {
+	height: 100%;
+	background-image: url("../images/background.jpg");
+	background-repeat: repeat-y;
+	background-size: 100%;
+}
+
+a, a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+.top_menu, .past_lesson, .next_lesson, .footer, .logo {
+    position: fixed;
+}
+/*меню (хэдер)*/
+.top_menu	{
+  position: fixed;
+	top: 0;
+	margin-top: 24px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+/*лого*/
+.top_menu .logo	{
+margin-left: 18px;
+}
+
+/*сама менюшка*/
+.top_menu .navigation_bar {
+    display: flex;
+    margin-left: 150px;
+    height: 50px;
+    position: fixed;
+    transition: display 10s;
+}
+.icon_menu{
+    margin-left: 156px;
+    margin-top: 18px;
+    display: none;
+    transition: left 0.5s;
+}
+/*ссылки менюшки*/
+.nav {
+	font-size: 20px;
+	margin: 0 15px;
+	padding: 15px 0;
+}
+
+.nav a:after{
+  background-color: #ff9100;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+
+}
+.nav a:hover:after,
+.nav a:focus:after {
+    width: 100%;
+}
+/*блок поделиться в соцсетях */
+.top_menu .share_bar {
+	order: 999;
+	display: flex;
+	right: 0;
+	margin-left: auto;
+	margin-right: 86px;
+  height: 50px;
+  padding-top: 15px;
+}
+
+/*каждая ссылочка в делении*/
+.share {
+	margin-right:13px;
+
+}
+
+/*родительский блок для перехода на трени справа и слева*/
+.change_lesson{
+    display: flex;
+    font-family: sans-serif;
+    font-size: 1.5em;                         /* 3 */
+    cursor: pointer;
+}
+
+
+.change_lesson a:before{
+    right: 70px;
+    top: 14px;
+    display: inline-block;
+    position: fixed;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #ff9100;
+    transition: width .3s ease-in-out, up .3s ease-in-out, down .3s ease-in-out;
+}
+
+.change_lesson a:after{
+    left: 70px;
+    top: 14px;
+    display: inline-block;
+    position: fixed;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #ff9100;
+    transition: width .3s ease-in-out, up .3s ease-in-out, down .3s ease-in-out;
+
+}
+
+.change_lesson a:hover:after,
+.change_lesson a:focus:after {
+    width: 100%;
+}
+.change_lesson a:hover:before,
+.change_lesson a:focus:before {
+    width: 100%;
+}
+
+.change_lesson .next{
+    transform: translate(0, -50%) ;
+    position: absolute;           /* 2 */
+    top: 50%;
+    right: 20px;
+    /*поворотик*/
+    -webkit-transform: rotate(-90deg); /*Chrome, Safari*/
+    -moz-transform: rotate(-90deg); /*Firefox*/
+    -o-transform: rotate(-90deg); /*Opera*/
+    -ms-transform: rotate(-90deg); /*IE*/
+}
+
+.change_lesson .previous{
+    transform: translate(0, -50%) ;
+    position: absolute;           /* 2 */
+    top: 50%;
+    left: 10px;
+    /*поворотик*/
+    -webkit-transform: rotate(90deg); /*Chrome, Safari*/
+    -moz-transform: rotate(90deg); /*Firefox*/
+    -o-transform: rotate(90deg); /*Opera*/
+    -ms-transform: rotate(90deg); /*IE*/
+}
+/*родительский блок для перехода на трени справа*/
+.past_lesson {
+    transform: translate(0, 50%) ;
+    position: fixed;           /* 2 */
+    top: 35%;
+    left: 25px;
+    cursor: pointer;
+    /*поворотик*/
+    -webkit-transform: rotate(90deg); /*Chrome, Safari*/
+    -moz-transform: rotate(90deg); /*Firefox*/
+    -o-transform: rotate(90deg); /*Opera*/
+    -ms-transform: rotate(90deg); /*IE*/
+    margin-left: 8px;
+    font-size: 25px;
+    width: 25px; text-align: center;
+}
+/*родительский блок для перехода на трени слева*/
+.next_lesson{
+    transform: translate(0, -50%) ;
+    position: fixed;           /* 2 */
+    top: 45%;
+    right: 40px;
+    cursor: pointer;
+    /*поворотик*/
+    -webkit-transform: rotate(-90deg); /*Chrome, Safari*/
+    -moz-transform: rotate(-90deg); /*Firefox*/
+    -o-transform: rotate(-90deg); /*Opera*/
+    -ms-transform: rotate(-90deg); /*IE*/
+    font-size: 25px;
+    width: 25px; text-align: center;
+}
+.past_lesson a:hover:after,
+.past_lesson a:focus:after {
+    width: 100%;
+}
+.past_lesson a:hover:before,
+.past_lesson a:focus:before {
+    width: 100%;
+}
+.next_lesson a:hover:after,
+.next_lesson a:focus:after {
+    width: 100%;
+}
+.next_lesson a:hover:before,
+.next_lesson a:focus:before {
+    width: 100%;
+}
+ .past_lesson a:before{
+    right: 40px;
+    top: 14px;
+    display: inline-block;
+    position: fixed;
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #ff9100;
+    transition: width .3s ease-in-out, up .3s ease-in-out, down .3s ease-in-out;
+}
+
+ .past_lesson a:after{
+    left: 150px;
+    top: 14px;
+    display: inline-block;
+    position: fixed;
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #ff9100;
+    transition: width .3s ease-in-out, up .3s ease-in-out, down .3s ease-in-out;
+
+}
+ .next_lesson a:before{
+    right: 40px;
+    top: 14px;
+    display: inline-block;
+    position: fixed;
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #ff9100;
+    transition: width .3s ease-in-out, up .3s ease-in-out, down .3s ease-in-out;
+}
+
+ .next_lesson a:after{
+    left: 120px;
+    top: 14px;
+    display: inline-block;
+    position: fixed;
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #ff9100;
+    transition: width .3s ease-in-out, up .3s ease-in-out, down .3s ease-in-out;
+
+}
+
+/*центральный блок*/
+.central_block{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.logo_second {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*футер*/
+.footer {
+    bottom: 0;
+    margin: 0 0 25px 15px;
+}
+
+.footer a:hover{
+    border-bottom: 1px solid white;
+}
+
+.main_info{
+    position: absolute;
+    top: 20%;
+    width: auto;
+    min-height: 100%;
+    margin: 0px 20%;
+}
+/*блок для фото на 3 странице*/
+.right_image{
+    float: right;
+}
+.start_phrase{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	color: white;
+}
+
+.start_sport{
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	color: white;
+}
+
+.start_sport_ref{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 25px;
+	color: white;
+	border-style: double;
+	border-width: 10px;
+	padding: 7px;
+}
+
+
+.central{
+	padding-top: 12%;
+}
+
+.central__scroll{
+	perspective: 1200px;
+ 	font-size:0;
+ 	margin-bottom: 3rem;
+ 	overflow: hidden;
+}
+
+.scroll {
+  transform-style: preserve-3d;
+  height: 300px;
+  transform-origin: 50% 50% -500px;
+  transition: 1s;
+}
+
+ .scroll__img{
+  	width: 40%;
+		height: 100%;
+		max-height: 425px;
+		max-width: 425px;
+  	position: absolute;
+		left: 30%;
+  	transform-origin: 50% 50% -500px;
+  	outline:1px solid transparent;
+}
+
+.scroll__img:nth-child(1) { transform:rotateY(0deg);}
+.scroll .scroll__img:nth-child(2) { transform: rotateY(-45deg); }
+.scroll .scroll__img:nth-child(3) { transform: rotateY(-90deg); }
+.scroll .scroll__img:nth-child(4) { transform: rotateY(-135deg); }
+.scroll .scroll__img:nth-child(5) { transform: rotateY(-180deg); }
+.scroll .scroll__img:nth-child(6) { transform: rotateY(-225deg); }
+.scroll .scroll__img:nth-child(7){ transform: rotateY(-270deg); }
+.scroll .scroll__img:nth-child(8){ transform: rotateY(-315deg); }
+
+.scroll__next {
+  color: #fff;
+  margin: 10%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 0.6s color;
+  position: relative;
+  margin-top: -10rem;
+  border-bottom: none;
+  line-height: 0; }
+
+.scroll__next:hover{
+		color: #888;
+		cursor: pointer;
+}
+.scroll__choose{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	color: white;
+}
+.central_block_info{
+    color: white;
+    float: left;
+    margin-left: 5%;
+    margin-right: 55%;
+    align-content: center;
+    padding-left: 5%;
+}
+.central_block_map{
+    color: white;
+    margin-top: 100px;
+    margin-right: 10%;
+    margin-left: 50%;
+    padding-bottom: 2em;
+
+}
