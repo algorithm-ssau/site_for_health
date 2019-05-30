@@ -12,7 +12,7 @@ a {
 }
 body {
 	height: 100%;
-	background-image: url("images/background.jpg");
+	background-image: url("../images/background.jpg");
 	background-repeat: repeat-y;
 	background-size: 100%;
 
@@ -41,9 +41,6 @@ margin-left: 18px;
 	margin: 0 15px;
 	padding: 15px 0;
 
-}
-.nav:hover a {
-	border-bottom: 1px solid white;
 }
 
 .top_menu .share_bar {
@@ -82,7 +79,12 @@ em{
 }
 
 .footer {
+	bottom: 0;
+	margin: 0 0 25px 15px;
+}
 
+.footer a:hover{
+	border-bottom: 1px solid white;
 }
 .main_info{
     width: auto;
