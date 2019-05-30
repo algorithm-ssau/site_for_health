@@ -299,6 +299,7 @@ margin-left: 18px;
 /*блок для правого фото на 3 странице*/
 .right_image{
     float: right;
+    margin-left: 12px;
 }
 /*блок для левого фото на 3 странице*/
 .left_image{
@@ -413,4 +414,7 @@ margin-left: 18px;
     margin-left: 50%;
     padding-bottom: 2em;
 
+}
+ul {
+    list-style-type: circle;
 }
