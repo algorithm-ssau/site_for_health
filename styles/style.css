@@ -395,15 +395,9 @@ margin-left: 18px;
 .scroll__next:hover{
 		color: #888;
 		cursor: pointer;
-}
-.scroll__choose{
-	position: absolute;
-	top: 80%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 20px;
-	color: white;
-} */
+}*/
+
+
 .central_block_info{
     color: white;
     float: left;
@@ -439,9 +433,9 @@ ul {
     height: 300px;
     border: none ;
     box-shadow: none;
-    max-width: 425px;
+    max-width: 600px;
     position: absolute;
-    left: 30%;
+    left: 23%;
 }
 /* Кнопки вперед и назад */
 .slider .prev_item, .slider .next_item {
@@ -470,11 +464,11 @@ ul {
 /* Заголовок слайда */
 .slideText {
     position: absolute;
-    color: #fff;
-    font-size: 35px;
+    color: white;
+    font-size: 40px;
     /* Выравнивание текста по горизонтали и по вертикали*/
     left: 50%;
-    top: 50%;
+    top: 80%;
     transform: translate(-50%, -50%);
     /* Тень*/
     text-shadow: 1px 1px 1px #000, 0 0 1em #000;
@@ -519,4 +513,13 @@ ul {
     to {
         opacity: 1
     }
+}
+
+
+.scroll__choose{
+	position: absolute;
+	top: 80%;
+  margin-left: 42%;
+	font-size: 20px;
+	color: white;
 }
