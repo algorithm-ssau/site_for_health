@@ -183,7 +183,7 @@ margin-left: 18px;
 .next_lesson{
     transform: translate(0, -50%) ;
     position: fixed;           /* 2 */
-    top: 45%;
+    top: 55%;
     right: 40px;
     cursor: pointer;
     /*поворотик*/
@@ -283,6 +283,7 @@ margin-left: 18px;
 .footer {
     bottom: 0;
     margin: 0 0 25px 15px;
+    font-size: 10px;
 }
 
 .footer a:hover{
@@ -399,21 +400,34 @@ margin-left: 18px;
 
 
 .central_block_info{
+  top: 20%;
+  position: absolute;
     color: white;
     float: left;
-    margin-left: 5%;
-    margin-right: 55%;
+    margin-left: 20%;
+
     align-content: center;
     padding-left: 5%;
 }
-.central_block_map{
+.central_block_img{
+    position: absolute;
+    top: 10%;
     color: white;
-    margin-top: 100px;
+    max-width: 300px;
     margin-right: 10%;
-    margin-left: 50%;
+    left: 60%;
+    margin-left: 5%;
     padding-bottom: 2em;
-
 }
+
+.central_block_img img{
+  width: 100%;
+  height:50%;
+  max-width: 500px;
+  max-height: 400px;
+}
+
+
 ul {
     list-style-type: circle;
 }
