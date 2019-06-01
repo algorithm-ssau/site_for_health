@@ -306,6 +306,11 @@ margin-left: 18px;
     float: left;
     margin-right: 40px;
 }
+.center_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .start_phrase{
 	position: absolute;
 	top: 35%;
