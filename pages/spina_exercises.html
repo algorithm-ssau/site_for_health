@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <script src="../scripts/script.js"></script>
+    <title>Упражнения на спину</title>
+</head>
+<body>
+<div class="top_menu">
+    <div class="logo">
+        <a href="index.html"> <img src="../images/logo.png"> </a>
+    </div>
+    <div class="navigation_bar">
+        <div class="nav"> <a href="all_type_exercises.html"> Упражнения </a> </div>
+        <div class="nav"> <a href='all_fitness_centers.html'> Фитнес-центры </a> </div>
+        <div class="nav"><a href="all_treners.html"> Тренеры </a></div>
+    </div>
+    <div class="share_bar">
+        <div class="share"><a href="#"> <img src="../images/vk.png"> </a></div>
+        <div class="share"><a href="#"> <img src="../images/instagram.png"> </a></div>
+    </div>
+</div>
+
+<div class="central">
+    <div class="slider">
+        <div class="item">
+            <a href="exercises/exercise3.html">
+                <img src="../images/rastyazhka_shey.jpg" alt="Растяжка шеи">
+                <div class="slideText">Растяжка шеи</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="exercises/exercise6.html">
+                <img src="../images/cat.jpg" alt="Кошка">
+                <div class="slideText">Кошка</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="exercises/exercise7.html">
+                <img src="../images/lodka.jpg" alt="Лодочка">
+                <div class="slideText">Лодочка</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="exercises/exercise8.html">
+                <img src="../images/superman.jpg" alt="Супермен">
+                <div class="slideText">Супермен</div>
+            </a>
+        </div>
+        <a class="prev_item" onclick="minusSlide()">&#10094;</a>
+        <a class="next_item" onclick="plusSlide()">&#10095;</a>
+
+    </div>
+
+    <div class="slider-dots">
+        <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p><a href="#">Политика конфиденциальности</a><br>
+        <a href="#">Связаться с нами</a><br><br>
+        All rights reserved<br>&copyЕ. Денисова, 2019</p>
+</div>
+</body>
+</html>
