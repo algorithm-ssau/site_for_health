@@ -4,8 +4,6 @@
 // if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
 // spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
 // }
-var slideIndex = 1;
-showSlides(slideIndex);
 $(window).on('scroll',function(){
     if ($(this).scrollTop() > 100) {
         $('.navigation_bar').fadeOut();
@@ -15,13 +13,14 @@ $(window).on('scroll',function(){
         $('.navigation_bar').fadeIn();
         $('.icon_menu').fadeOut();
 
-}
+    }
 });
 function clickMenu() {
     $('.icon_menu').fadeOut();
     $('.navigation_bar').fadeIn().css("display","block");
 }
-
+var slideIndex = 1;
+showSlides(slideIndex);
 /* Индекс слайда по умолчанию */
 
 
