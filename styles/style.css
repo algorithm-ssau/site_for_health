@@ -537,3 +537,31 @@ ul {
 	font-size: 20px;
 	color: white;
 }
+
+
+.central_block__book img{
+  margin-left: 5%;
+  width: 90%;
+  height:50%;
+  max-height: 450px;
+}
+
+.central_block_exercise{
+  top: 10%;
+  position: absolute;
+    color: black;
+    float: left;
+    margin-left: 20%;
+    align-content: center;
+    padding-left: 5%;
+}
+.central_block_times{
+    position: absolute;
+    top: 10%;
+    color: black;
+    max-width: 300px;
+    margin-right: 10%;
+    left: 60%;
+    margin-left: 5%;
+    padding-bottom: 2em;
+}
